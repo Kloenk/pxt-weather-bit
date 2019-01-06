@@ -400,9 +400,9 @@ namespace weatherbit {
 	 * Returns a 4 digit number. value should be divided by 100 to get 
 	 *temperature in hudnreths of a degree centigrade. 
      */
-    //% weight=10 blockId="weahterbit_soilTemp" block="soil temperature(C)"
+    //% weight=10 blockId="weahterbit_soilTemp" block="env temperature(C)"
     //% shim=weatherbit::soilTemp
-    export function soilTemperature(): number {
+    export function envTemperature(): number {
         // Fake function for simulator
         return 0
     }

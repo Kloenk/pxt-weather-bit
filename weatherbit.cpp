@@ -27,8 +27,13 @@ using namespace pxt;
 #define PXT_BUFFER_DATA(buffer) buffer->payload
 #endif
 
+// define port for weather
+#ifndef TMP_PORT
+#define TMP_PORT uBit.io.P0;
+#endif //TMP_PORT
+
 namespace weatherbit {
-    MicroBitPin P12 = uBit.io.P12;
+    MicroBitPin P12 = TMP_PORT;
     MicroBitPin P13 = uBit.io.P13;
 
     uint8_t init() {
