@@ -402,7 +402,7 @@ namespace weatherbit {
      */
     //% weight=10 blockId="weahterbit_soilTemp" block="env temperature(C)"
     //% shim=weatherbit::soilTemp
-    export function envTemperature(): number {
+    export function soilTemperature(): number {
         // Fake function for simulator
         return 0
     }
